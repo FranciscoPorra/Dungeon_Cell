@@ -2,95 +2,160 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.XR.Interaction.Toolkit;
 
+[RequireComponent(typeof(AudioSource))]
 public class GuardInspectionController : MonoBehaviour
 {
     [Header("Referencias en la Puerta")]
-    public GameObject guardPeekVisual;      // Guardia en la mirilla
-    public VisionConeFilter visionCone;     // Componente en el objeto con SphereCollider
-    public GameObject coneVisualMesh;       // Malla o luz opcional del cono
+    public GameObject guardVisual;          // Guardia que aparece en la rendija
+    public VisionConeFilter visionCone;    // Componente del objeto con SphereCollider
+    public MeshRenderer coneRayRenderer;    // MeshRenderer del cono de visión (rayo de luz)
+    public GameObject visionConeVisual;     // Opcional: otro objeto visual extra
+    public Light coneSpotLight;             // Opcional: luz puntual o de foco
+    public AudioSource audioSource;         // Fuente de audio (idealmente 3D en la puerta)
 
-    [Header("Tiempos (segundos)")]
-    public float minWaitBetweenChecks = 8f;
-    public float maxWaitBetweenChecks = 16f;
+    [Header("Tiempos de Ronda (segundos)")]
+    public float minWaitTime = 8f;
+    public float maxWaitTime = 16f;
+    public float warningLeadTime = 1.5f;  // Tiempo de aviso antes de mostrar guardia y cono
     public float inspectionDuration = 3f;
 
-    [Header("Ladrillos a Vigilar")]
-    public bool autoFindBricksOnStart = true;
-    public List<EscapableBrick> bricks = new List<EscapableBrick>();
+    [Header("Sonidos de Inmersión (MP3 / AudioClips)")]
+    [Tooltip("Sonidos aleatorios antes de que aparezca el guardia (pasos, cerrojo, etc.)")]
+    public List<AudioClip> approachSounds = new List<AudioClip>();
+
+    [Tooltip("Sonidos aleatorios cuando el guardia termina y se va")]
+    public List<AudioClip> leaveSounds = new List<AudioClip>();
+
+    [Header("Ladrillos a Vigilar (cargados en el Inspector)")]
+    public List<XRGrabInteractable> bricksToWatch = new List<XRGrabInteractable>();
 
     [Header("Derrota")]
     public UnityEvent onPlayerCaught;
 
     private bool isInspecting = false;
-    private bool gameOverTriggered = false;
+    private bool gameEnded = false;
+
+    void Awake()
+    {
+        if (audioSource == null)
+            audioSource = GetComponent<AudioSource>();
+
+        if (coneRayRenderer == null && visionCone != null)
+            coneRayRenderer = visionCone.GetComponent<MeshRenderer>();
+    }
 
     void Start()
     {
-        if (autoFindBricksOnStart && bricks.Count == 0)
-        {
-            bricks.AddRange(FindObjectsByType<EscapableBrick>(FindObjectsSortMode.None));
-        }
-
-        SetInspectionActive(false);
-        StartCoroutine(InspectionRoutine());
+        SetInspectionState(false);
+        StartCoroutine(InspectionLoop());
     }
 
-    private IEnumerator InspectionRoutine()
+    private IEnumerator InspectionLoop()
     {
-        while (!gameOverTriggered)
+        while (!gameEnded)
         {
-            float waitTime = Random.Range(minWaitBetweenChecks, maxWaitBetweenChecks);
+            float waitTime = Random.Range(minWaitTime, maxWaitTime);
             yield return new WaitForSeconds(waitTime);
 
-            if (gameOverTriggered) yield break;
+            if (gameEnded) yield break;
 
-            SetInspectionActive(true);
+            // 1. Aviso previo: reproduce un sonido aleatorio y da margen al jugador
+            PlayRandomClip(approachSounds);
 
-            float timer = 0f;
-            while (timer < inspectionDuration && !gameOverTriggered)
+            if (warningLeadTime > 0f)
             {
-                if (HasHeldBrickInVisionCone())
+                float warnElapsed = 0f;
+                while (warnElapsed < warningLeadTime && !gameEnded)
+                {
+                    warnElapsed += Time.deltaTime;
+                    yield return null;
+                }
+            }
+
+            if (gameEnded) yield break;
+
+            // 2. Aparece el guardia y se activa el cono de visión
+            SetInspectionState(true);
+
+            float elapsed = 0f;
+            while (elapsed < inspectionDuration && !gameEnded)
+            {
+                if (IsPlayerCaughtWithBrick())
                 {
                     TriggerGameOver();
                     yield break;
                 }
 
-                timer += Time.deltaTime;
+                elapsed += Time.deltaTime;
                 yield return null;
             }
 
-            SetInspectionActive(false);
+            // 3. El guardia se va: oculta guardia/cono y reproduce sonido de retirada
+            SetInspectionState(false);
+            PlayRandomClip(leaveSounds);
         }
     }
 
-    private void SetInspectionActive(bool active)
+    private void PlayRandomClip(List<AudioClip> clips)
+    {
+        if (audioSource == null || clips == null || clips.Count == 0)
+            return;
+
+        List<AudioClip> validClips = new List<AudioClip>();
+        for (int i = 0; i < clips.Count; i++)
+        {
+            if (clips[i] != null)
+                validClips.Add(clips[i]);
+        }
+
+        if (validClips.Count == 0) return;
+
+        int index = Random.Range(0, validClips.Count);
+        audioSource.PlayOneShot(validClips[index]);
+    }
+
+    private void SetInspectionState(bool active)
     {
         isInspecting = active;
 
-        if (guardPeekVisual != null)
-            guardPeekVisual.SetActive(active);
+        if (guardVisual != null)
+            guardVisual.SetActive(active);
 
-        if (coneVisualMesh != null)
-            coneVisualMesh.SetActive(active);
+        if (coneRayRenderer != null)
+            coneRayRenderer.enabled = active;
+
+        if (visionConeVisual != null)
+            visionConeVisual.SetActive(active);
+
+        if (coneSpotLight != null)
+            coneSpotLight.enabled = active;
 
         if (visionCone != null)
-            visionCone.gameObject.SetActive(active);
+            visionCone.enabled = active;
     }
 
-    private bool HasHeldBrickInVisionCone()
+    private bool IsPlayerCaughtWithBrick()
     {
-        if (!isInspecting || visionCone == null)
-            return false;
+        if (!isInspecting) return false;
 
-        foreach (var brick in bricks)
+        foreach (var brick in bricksToWatch)
         {
-            if (brick == null || !brick.gameObject.activeInHierarchy)
-                continue;
+            if (brick == null || !brick.gameObject.activeInHierarchy) continue;
 
-            if (brick.IsHeldByPlayer && visionCone.IsColliderInsideCone(brick.BrickCollider))
-            {
+            // 1. Está siendo agarrado actualmente
+            if (brick.isSelected)
                 return true;
+
+            // 2. Está dentro del cono de visión
+            if (visionCone != null)
+            {
+                Collider brickCol = brick.GetComponent<Collider>();
+                if (brickCol != null && visionCone.IsColliderInsideCone(brickCol))
+                {
+                    return true;
+                }
             }
         }
 
@@ -99,10 +164,10 @@ public class GuardInspectionController : MonoBehaviour
 
     private void TriggerGameOver()
     {
-        if (gameOverTriggered) return;
-        gameOverTriggered = true;
+        if (gameEnded) return;
+        gameEnded = true;
 
-        Debug.Log("¡El guardia te vio sosteniendo un ladrillo!");
+        Debug.Log("¡El guardia vio un ladrillo! Fin de la partida.");
         onPlayerCaught?.Invoke();
     }
 }

@@ -1579,7 +1579,7 @@ GameObject:
   - component: {fileID: 21642382}
   - component: {fileID: 21642383}
   m_Layer: 0
-  m_Name: Ladrillo_Mediano
+  m_Name: ladrillo_movible_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3640,7 +3640,7 @@ GameObject:
   - component: {fileID: 51527444}
   - component: {fileID: 51527445}
   m_Layer: 0
-  m_Name: Ladrillo_Re_Pequenio (10)
+  m_Name: ladrillo_movible_27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4436,7 +4436,7 @@ GameObject:
   - component: {fileID: 53089676}
   - component: {fileID: 53089677}
   m_Layer: 0
-  m_Name: Ladrillo_Re_Pequenio (6)
+  m_Name: ladrillo_movible_34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4809,7 +4809,7 @@ GameObject:
   - component: {fileID: 55816413}
   - component: {fileID: 55816414}
   m_Layer: 0
-  m_Name: Ladrillo_Mediano (3)
+  m_Name: ladrillo_movible_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7136,7 +7136,7 @@ GameObject:
   - component: {fileID: 82804408}
   - component: {fileID: 82804409}
   m_Layer: 0
-  m_Name: Ladrillo_Re_Pequenio (3)
+  m_Name: ladrillo_movible_28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7783,7 +7783,7 @@ GameObject:
   - component: {fileID: 97685632}
   - component: {fileID: 97685633}
   m_Layer: 0
-  m_Name: Ladrillo_Muy_Pequenio (2)
+  m_Name: ladrillo_movible_16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12720,7 +12720,7 @@ GameObject:
   - component: {fileID: 219055071}
   - component: {fileID: 219055072}
   m_Layer: 0
-  m_Name: Ladrillo_Muy_Pequenio (6)
+  m_Name: ladrillo_movible_23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15801,7 +15801,7 @@ GameObject:
   - component: {fileID: 304596971}
   - component: {fileID: 304596972}
   m_Layer: 0
-  m_Name: Ladrillo_Mediano
+  m_Name: ladrillo_movible_36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20706,7 +20706,7 @@ GameObject:
   - component: {fileID: 426242339}
   - component: {fileID: 426242340}
   m_Layer: 0
-  m_Name: Ladrillo_Grande (2)
+  m_Name: ladrillo_movible_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21321,7 +21321,7 @@ GameObject:
   - component: {fileID: 427732153}
   - component: {fileID: 427732154}
   m_Layer: 0
-  m_Name: Ladrillo_Mediano (9)
+  m_Name: ladrillo_movible_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22654,7 +22654,7 @@ GameObject:
   - component: {fileID: 444870357}
   - component: {fileID: 444870358}
   m_Layer: 0
-  m_Name: Ladrillo_Mediano (11)
+  m_Name: ladrillo_movible_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25885,7 +25885,7 @@ GameObject:
   - component: {fileID: 520218994}
   - component: {fileID: 520218995}
   m_Layer: 0
-  m_Name: Ladrillo_Grande (3)
+  m_Name: ladrillo_movible_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27419,37 +27419,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544478938}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &547423958
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 547423959}
-  m_Layer: 0
-  m_Name: ConeVisualMesh
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &547423959
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 547423958}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1152715968}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &549602641
 GameObject:
   m_ObjectHideFlags: 0
@@ -27605,7 +27574,7 @@ GameObject:
   - component: {fileID: 551192137}
   - component: {fileID: 551192138}
   m_Layer: 0
-  m_Name: Ladrillo_Re_Pequenio (4)
+  m_Name: ladrillo_movible_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28633,7 +28602,7 @@ GameObject:
   - component: {fileID: 576342303}
   - component: {fileID: 576342304}
   m_Layer: 0
-  m_Name: Ladrillo_Re_Pequenio (8)
+  m_Name: ladrillo_movible_30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29417,7 +29386,7 @@ GameObject:
   - component: {fileID: 589729142}
   - component: {fileID: 589729143}
   m_Layer: 0
-  m_Name: Ladrillo_Re_Pequenio
+  m_Name: ladrillo_movible_25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31402,7 +31371,7 @@ GameObject:
   - component: {fileID: 620874605}
   - component: {fileID: 620874606}
   m_Layer: 0
-  m_Name: Ladrillo_Re_Pequenio (2)
+  m_Name: ladrillo_movible_35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33972,7 +33941,7 @@ Transform:
   m_GameObject: {fileID: 687601378}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.69997764, z: -0, w: -0.71416485}
-  m_LocalPosition: {x: 1.058, y: 1.0873821, z: 3.304}
+  m_LocalPosition: {x: 1.06, y: 1.08, z: 3.3}
   m_LocalScale: {x: 0.6801799, y: 0.27956998, z: 0.19999999}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -37386,7 +37355,7 @@ GameObject:
   - component: {fileID: 762935481}
   - component: {fileID: 762935482}
   m_Layer: 0
-  m_Name: Ladrillo_Pequenio (3)
+  m_Name: ladrillo_movible_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39782,7 +39751,7 @@ GameObject:
   - component: {fileID: 798939868}
   - component: {fileID: 798939869}
   m_Layer: 0
-  m_Name: Ladrillo_Re_Pequenio (5)
+  m_Name: ladrillo_movible_29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43169,7 +43138,7 @@ GameObject:
   - component: {fileID: 864035183}
   - component: {fileID: 864035184}
   m_Layer: 0
-  m_Name: Ladrillo_Pequenio (9)
+  m_Name: ladrillo_movible_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44090,7 +44059,7 @@ GameObject:
   - component: {fileID: 888303473}
   - component: {fileID: 888303474}
   m_Layer: 0
-  m_Name: Ladrillo fila 0
+  m_Name: ladrillo_movible_24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47198,7 +47167,7 @@ GameObject:
   - component: {fileID: 956219965}
   - component: {fileID: 956219966}
   m_Layer: 0
-  m_Name: Ladrillo_Muy_Pequenio (8)
+  m_Name: ladrillo_movible_19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49458,7 +49427,7 @@ GameObject:
   - component: {fileID: 1008913672}
   - component: {fileID: 1008913673}
   m_Layer: 0
-  m_Name: Ladrillo_Grande (4)
+  m_Name: ladrillo_movible_37
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49843,7 +49812,7 @@ GameObject:
   - component: {fileID: 1019079454}
   - component: {fileID: 1019079455}
   m_Layer: 0
-  m_Name: Ladrillo_Muy_Pequenio (3)
+  m_Name: ladrillo_movible_17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51038,7 +51007,7 @@ GameObject:
   - component: {fileID: 1035189391}
   - component: {fileID: 1035189392}
   m_Layer: 0
-  m_Name: Ladrillo_Mediano (11)
+  m_Name: ladrillo_movible_41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53192,7 +53161,7 @@ GameObject:
   - component: {fileID: 1095474905}
   - component: {fileID: 1095474906}
   m_Layer: 0
-  m_Name: Ladrillo_Mediano (8)
+  m_Name: ladrillo_movible_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54492,7 +54461,7 @@ GameObject:
   - component: {fileID: 1122246552}
   - component: {fileID: 1122246553}
   m_Layer: 0
-  m_Name: Ladrillo fila 1
+  m_Name: ladrillo_movible_40
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56090,6 +56059,9 @@ GameObject:
   - component: {fileID: 1152715968}
   - component: {fileID: 1152715970}
   - component: {fileID: 1152715969}
+  - component: {fileID: 1152715973}
+  - component: {fileID: 1152715972}
+  - component: {fileID: 1152715971}
   m_Layer: 0
   m_Name: Vision
   m_TagString: Untagged
@@ -56107,10 +56079,9 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.6990111, z: -0, w: 0.71511084}
   m_LocalPosition: {x: -4.25, y: 0.81, z: 1.3999996}
-  m_LocalScale: {x: 12, y: 12, z: 12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 547423959}
+  m_Children: []
   m_Father: {fileID: 937318766}
   m_LocalEulerAnglesHint: {x: 0, y: -88.695, z: 0}
 --- !u!114 &1152715969
@@ -56125,10 +56096,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7e4fb67c5ab48c45b2d999eca414f23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minHorizontalAngle: -35
+  minHorizontalAngle: -28
   maxHorizontalAngle: 31
-  minVerticalAngle: -31.9
-  maxVerticalAngle: 16.8
+  minVerticalAngle: -33.7
+  maxVerticalAngle: 0
   targetLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -56151,8 +56122,74 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 6
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1152715971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152715967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63e8dd98eb755f44a8e147fa43ef37ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalSteps: 24
+  verticalSteps: 12
+  doubleSidedMesh: 1
+  disableShadows: 1
+--- !u!33 &1152715972
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152715967}
+  m_Mesh: {fileID: 0}
+--- !u!23 &1152715973
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152715967}
+  m_Enabled: 1
+  m_CastShadows: 2
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 07178c854413e1444a4929e83e51eb45, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1157613071
 GameObject:
   m_ObjectHideFlags: 0
@@ -57405,7 +57442,7 @@ GameObject:
   - component: {fileID: 1184363556}
   - component: {fileID: 1184363557}
   m_Layer: 0
-  m_Name: Ladrillo_Muy_Pequenio (5)
+  m_Name: ladrillo_movible_22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63219,7 +63256,7 @@ GameObject:
   - component: {fileID: 1331649202}
   - component: {fileID: 1331649203}
   m_Layer: 0
-  m_Name: Ladrillo_Pequenio (6)
+  m_Name: ladrillo_movible_38
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64238,6 +64275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1345820104}
   - component: {fileID: 1345820105}
+  - component: {fileID: 1345820106}
   m_Layer: 0
   m_Name: Controlador_vision
   m_TagString: Untagged
@@ -64254,7 +64292,7 @@ Transform:
   m_GameObject: {fileID: 1345820103}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -4.22, y: 0.36, z: 1.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -64272,17 +64310,174 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b09417d098b3f6458a32aa316e6be63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guardPeekVisual: {fileID: 0}
-  visionCone: {fileID: 0}
-  coneVisualMesh: {fileID: 0}
-  minWaitBetweenChecks: 8
-  maxWaitBetweenChecks: 16
+  guardVisual: {fileID: 1529575010}
+  visionCone: {fileID: 1152715969}
+  coneRayRenderer: {fileID: 1152715973}
+  visionConeVisual: {fileID: 1152715967}
+  coneSpotLight: {fileID: 0}
+  audioSource: {fileID: 1345820106}
+  minWaitTime: 8
+  maxWaitTime: 16
+  warningLeadTime: 1.5
   inspectionDuration: 3
+  approachSounds: []
+  leaveSounds: []
   autoFindBricksOnStart: 1
-  bricks: []
+  bricksToWatch:
+  - {fileID: 551192134}
+  - {fileID: 426242335}
+  - {fileID: 21642378}
+  - {fileID: 1095474901}
+  - {fileID: 520218989}
+  - {fileID: 1810334018}
+  - {fileID: 2147431406}
+  - {fileID: 55816409}
+  - {fileID: 444870352}
+  - {fileID: 427732149}
+  - {fileID: 762935477}
+  - {fileID: 864035179}
+  - {fileID: 1828230413}
+  - {fileID: 2060743150}
+  - {fileID: 1838077141}
+  - {fileID: 97685628}
+  - {fileID: 1019079450}
+  - {fileID: 1388441015}
+  - {fileID: 956219961}
+  - {fileID: 2102065405}
+  - {fileID: 2050458525}
+  - {fileID: 1184363549}
+  - {fileID: 219055064}
+  - {fileID: 888303466}
+  - {fileID: 589729138}
+  - {fileID: 1894975746}
+  - {fileID: 51527436}
+  - {fileID: 82804404}
+  - {fileID: 798939864}
+  - {fileID: 576342299}
+  - {fileID: 2116610136}
+  - {fileID: 1634225361}
+  - {fileID: 1736125117}
+  - {fileID: 53089672}
+  - {fileID: 620874601}
+  - {fileID: 304596967}
+  - {fileID: 1008913667}
+  - {fileID: 1331649198}
+  - {fileID: 1781251980}
+  - {fileID: 1122246548}
+  - {fileID: 1035189387}
+  - {fileID: 1496337667}
+  requireBrickInsideCone: 1
   onPlayerCaught:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: 4563b384f99724a47b9565cbd82ef3ff, type: 3}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!82 &1345820106
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345820103}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1346511973
 GameObject:
   m_ObjectHideFlags: 0
@@ -66325,7 +66520,7 @@ GameObject:
   - component: {fileID: 1388441019}
   - component: {fileID: 1388441020}
   m_Layer: 0
-  m_Name: Ladrillo_Muy_Pequenio (7)
+  m_Name: ladrillo_movible_18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70790,7 +70985,7 @@ GameObject:
   - component: {fileID: 1496337673}
   - component: {fileID: 1496337674}
   m_Layer: 0
-  m_Name: Ladrillo de prueba
+  m_Name: ladrillo_movible_prueba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76753,7 +76948,7 @@ GameObject:
   - component: {fileID: 1634225368}
   - component: {fileID: 1634225369}
   m_Layer: 0
-  m_Name: Ladrillo_Re_Pequenio (11)
+  m_Name: ladrillo_movible_32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80245,7 +80440,7 @@ GameObject:
   - component: {fileID: 1736125124}
   - component: {fileID: 1736125125}
   m_Layer: 0
-  m_Name: Ladrillo_Re_Pequenio (12)
+  m_Name: ladrillo_movible_33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81956,7 +82151,7 @@ GameObject:
   - component: {fileID: 1781251984}
   - component: {fileID: 1781251985}
   m_Layer: 0
-  m_Name: ladrillo fila 0 (1)
+  m_Name: ladrillo_movible_39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83530,7 +83725,7 @@ GameObject:
   - component: {fileID: 1810334022}
   - component: {fileID: 1810334023}
   m_Layer: 0
-  m_Name: Ladrillo_Mediano (4)
+  m_Name: ladrillo_movible_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84438,7 +84633,7 @@ GameObject:
   - component: {fileID: 1828230420}
   - component: {fileID: 1828230421}
   m_Layer: 0
-  m_Name: Ladrillo_Pequenio (10)
+  m_Name: ladrillo_movible_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85171,7 +85366,7 @@ GameObject:
   - component: {fileID: 1838077145}
   - component: {fileID: 1838077146}
   m_Layer: 0
-  m_Name: Ladrillo_Muy_Pequenio
+  m_Name: ladrillo_movible_15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88364,7 +88559,7 @@ GameObject:
   - component: {fileID: 1894975750}
   - component: {fileID: 1894975751}
   m_Layer: 0
-  m_Name: Ladrillo_Re_Pequenio (1)
+  m_Name: ladrillo_movible_26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94170,7 +94365,7 @@ GameObject:
   - component: {fileID: 2050458529}
   - component: {fileID: 2050458530}
   m_Layer: 0
-  m_Name: Ladrillo_Muy_Pequenio (1)
+  m_Name: ladrillo_movible_21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95091,7 +95286,7 @@ GameObject:
   - component: {fileID: 2060743154}
   - component: {fileID: 2060743155}
   m_Layer: 0
-  m_Name: Ladrillo_Grande (1)
+  m_Name: ladrillo_movible_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97519,7 +97714,7 @@ GameObject:
   - component: {fileID: 2102065409}
   - component: {fileID: 2102065410}
   m_Layer: 0
-  m_Name: Ladrillo_Muy_Pequenio (4)
+  m_Name: ladrillo_movible_20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98852,7 +99047,7 @@ GameObject:
   - component: {fileID: 2116610143}
   - component: {fileID: 2116610144}
   m_Layer: 0
-  m_Name: Ladrillo_Re_Pequenio (9)
+  m_Name: ladrillo_movible_31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100184,7 +100379,7 @@ GameObject:
   - component: {fileID: 2147431410}
   - component: {fileID: 2147431411}
   m_Layer: 0
-  m_Name: Ladrillo_Mediano (5)
+  m_Name: ladrillo_movible_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
