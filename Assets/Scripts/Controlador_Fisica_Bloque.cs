@@ -20,6 +20,9 @@ public class Controlador_Fisica_Bloque : MonoBehaviour
     //Inicialmente el bloque no esta siendo agarrado
     private bool bloque_esta_siendo_agarrado = false ;
 
+    //Para que no se deforme el bloque al soltarlo
+    private Vector3 escala_inicial;
+
 
     void Start()
     {
@@ -41,6 +44,8 @@ public class Controlador_Fisica_Bloque : MonoBehaviour
         xr_grab_interactable.movementType = XRBaseInteractable.MovementType.VelocityTracking;
         xr_grab_interactable.trackRotation = false;
 
+        escala_inicial = transform.localScale;
+
     }
 
     public void Calcular_Velocidad_del_Objeto()
@@ -58,7 +63,7 @@ public class Controlador_Fisica_Bloque : MonoBehaviour
     {
         Vector3 Tamanio = box_collider.size ;
         Vector3 Escala = transform.localScale ;  //Obtengo tamanio real del gameobject --> PROBLEMAAAS
-        float Volumen = (Tamanio.x * Escala.x) * (Tamanio.y * Escala.y) * (Tamanio.z * Escala.z) ;
+        float Volumen = (Escala.x) * (Escala.y) * (Escala.z) ;
 
         float Peso = (Volumen * densidad_del_material) ;
 
@@ -89,6 +94,7 @@ public class Controlador_Fisica_Bloque : MonoBehaviour
     private void Suelto_Bloque(SelectExitEventArgs args)
     {
         bloque_esta_siendo_agarrado = false ;
+        transform.localScale = escala_inicial;
         /*if (rigid_body.velocity.magnitude > velocidad_del_objeto)
             {
                 rigid_body.velocity = rigid_body.velocity.normalized * velocidad_del_objeto;

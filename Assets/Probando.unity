@@ -1577,6 +1577,7 @@ GameObject:
   - component: {fileID: 21642380}
   - component: {fileID: 21642381}
   - component: {fileID: 21642382}
+  - component: {fileID: 21642383}
   m_Layer: 0
   m_Name: Ladrillo_Mediano
   m_TagString: Untagged
@@ -1593,11 +1594,11 @@ Transform:
   m_GameObject: {fileID: 21642373}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.9284954, y: 0, z: -0.07}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -7.175, y: 0.42400002, z: 12.808669}
+  m_LocalScale: {x: 0.5, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &21642375
 BoxCollider:
@@ -1838,7 +1839,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -1918,6 +1919,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &21642383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21642373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &22430457
@@ -3625,6 +3638,7 @@ GameObject:
   - component: {fileID: 51527442}
   - component: {fileID: 51527443}
   - component: {fileID: 51527444}
+  - component: {fileID: 51527445}
   m_Layer: 0
   m_Name: Ladrillo_Re_Pequenio (10)
   m_TagString: Untagged
@@ -3641,11 +3655,11 @@ Transform:
   m_GameObject: {fileID: 51527434}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.118, y: 5.233, z: -0.07}
-  m_LocalScale: {x: 0.23227073, y: 0.5, z: 1}
+  m_LocalPosition: {x: -5.7697525, y: 1.4706, z: 12.808669}
+  m_LocalScale: {x: 0.116135366, y: 0.1, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &51527436
 MonoBehaviour:
@@ -3815,7 +3829,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -3978,6 +3992,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &51527445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51527434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &51757435
@@ -4408,6 +4434,7 @@ GameObject:
   - component: {fileID: 53089674}
   - component: {fileID: 53089675}
   - component: {fileID: 53089676}
+  - component: {fileID: 53089677}
   m_Layer: 0
   m_Name: Ladrillo_Re_Pequenio (6)
   m_TagString: Untagged
@@ -4424,11 +4451,11 @@ Transform:
   m_GameObject: {fileID: 53089667}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.7788, y: 2.2153082, z: -0.07}
-  m_LocalScale: {x: 0.2, y: 0.5, z: 1}
+  m_LocalPosition: {x: -7.1001525, y: 0.8670617, z: 12.808669}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &53089669
 BoxCollider:
@@ -4669,7 +4696,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -4751,6 +4778,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &53089677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53089667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &55816404
 GameObject:
   m_ObjectHideFlags: 0
@@ -4768,6 +4807,7 @@ GameObject:
   - component: {fileID: 55816411}
   - component: {fileID: 55816412}
   - component: {fileID: 55816413}
+  - component: {fileID: 55816414}
   m_Layer: 0
   m_Name: Ladrillo_Mediano (3)
   m_TagString: Untagged
@@ -4784,11 +4824,11 @@ Transform:
   m_GameObject: {fileID: 55816404}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9779997, y: 0, z: -0.07}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -6.693, y: 0.42400002, z: 12.808669}
+  m_LocalScale: {x: 0.45012987, y: 0.196498, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &55816406
 BoxCollider:
@@ -5029,7 +5069,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -5109,6 +5149,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &55816414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55816404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &57717460
@@ -7082,6 +7134,7 @@ GameObject:
   - component: {fileID: 82804406}
   - component: {fileID: 82804407}
   - component: {fileID: 82804408}
+  - component: {fileID: 82804409}
   m_Layer: 0
   m_Name: Ladrillo_Re_Pequenio (3)
   m_TagString: Untagged
@@ -7098,11 +7151,11 @@ Transform:
   m_GameObject: {fileID: 82804399}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5819998, y: 2.2153082, z: -0.07}
-  m_LocalScale: {x: 0.2, y: 0.5, z: 1}
+  m_LocalPosition: {x: -6.5017524, y: 0.8670617, z: 12.808669}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &82804401
 BoxCollider:
@@ -7343,7 +7396,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -7423,6 +7476,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &82804409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82804399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &88078744
@@ -7716,6 +7781,7 @@ GameObject:
   - component: {fileID: 97685630}
   - component: {fileID: 97685631}
   - component: {fileID: 97685632}
+  - component: {fileID: 97685633}
   m_Layer: 0
   m_Name: Ladrillo_Muy_Pequenio (2)
   m_TagString: Untagged
@@ -7732,11 +7798,11 @@ Transform:
   m_GameObject: {fileID: 97685623}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.69799995, y: 0.2873081, z: -0.07}
-  m_LocalScale: {x: 0.4, y: 0.5, z: 1}
+  m_LocalPosition: {x: -6.0597525, y: 0.48146164, z: 12.808669}
+  m_LocalScale: {x: 0.2, y: 0.1, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &97685625
 BoxCollider:
@@ -7977,7 +8043,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -8057,6 +8123,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &97685633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97685623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &98031341
@@ -8333,79 +8411,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103004822}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &105409883
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 105409884}
-  m_Layer: 0
-  m_Name: Muro destruible
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &105409884
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 105409883}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4429636, y: -0.44617677, z: -0.015}
-  m_LocalScale: {x: 0.5, y: 0.2, z: 0.2}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 551192130}
-  - {fileID: 426242331}
-  - {fileID: 21642374}
-  - {fileID: 1496337664}
-  - {fileID: 520218985}
-  - {fileID: 1810334014}
-  - {fileID: 2147431402}
-  - {fileID: 55816405}
-  - {fileID: 1095474897}
-  - {fileID: 444870348}
-  - {fileID: 427732145}
-  - {fileID: 762935473}
-  - {fileID: 864035175}
-  - {fileID: 1828230412}
-  - {fileID: 2060743146}
-  - {fileID: 1838077137}
-  - {fileID: 97685624}
-  - {fileID: 1019079446}
-  - {fileID: 1388441011}
-  - {fileID: 956219957}
-  - {fileID: 2102065401}
-  - {fileID: 2050458521}
-  - {fileID: 1184363548}
-  - {fileID: 219055063}
-  - {fileID: 888303465}
-  - {fileID: 589729134}
-  - {fileID: 1894975742}
-  - {fileID: 51527435}
-  - {fileID: 82804400}
-  - {fileID: 798939860}
-  - {fileID: 576342295}
-  - {fileID: 2116610135}
-  - {fileID: 1634225360}
-  - {fileID: 1736125116}
-  - {fileID: 53089668}
-  - {fileID: 620874597}
-  - {fileID: 304596966}
-  - {fileID: 1008913663}
-  - {fileID: 1331649194}
-  - {fileID: 1781251976}
-  - {fileID: 1122246544}
-  - {fileID: 1035189383}
-  m_Father: {fileID: 1833708495}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &116890629
 GameObject:
   m_ObjectHideFlags: 0
@@ -12713,6 +12718,7 @@ GameObject:
   - component: {fileID: 219055069}
   - component: {fileID: 219055070}
   - component: {fileID: 219055071}
+  - component: {fileID: 219055072}
   m_Layer: 0
   m_Name: Ladrillo_Muy_Pequenio (6)
   m_TagString: Untagged
@@ -12729,11 +12735,11 @@ Transform:
   m_GameObject: {fileID: 219055062}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.784, y: 4.674, z: -0.07}
-  m_LocalScale: {x: 0.4, y: 0.5, z: 1}
+  m_LocalPosition: {x: -6.6027527, y: 1.3587999, z: 12.808669}
+  m_LocalScale: {x: 0.2, y: 0.1, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &219055064
 MonoBehaviour:
@@ -12903,7 +12909,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -13054,6 +13060,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &219055072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219055062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &219946057
@@ -15781,6 +15799,7 @@ GameObject:
   - component: {fileID: 304596969}
   - component: {fileID: 304596970}
   - component: {fileID: 304596971}
+  - component: {fileID: 304596972}
   m_Layer: 0
   m_Name: Ladrillo_Mediano
   m_TagString: Untagged
@@ -15868,11 +15887,11 @@ Transform:
   m_GameObject: {fileID: 304596962}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.3884954, y: -1.5100002, z: -0.07}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -6.905, y: 0.12199998, z: 12.808669}
+  m_LocalScale: {x: 0.5, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &304596967
 MonoBehaviour:
@@ -16042,7 +16061,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -16122,6 +16141,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &304596972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304596962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &305490620
@@ -20673,6 +20704,7 @@ GameObject:
   - component: {fileID: 426242337}
   - component: {fileID: 426242338}
   - component: {fileID: 426242339}
+  - component: {fileID: 426242340}
   m_Layer: 0
   m_Name: Ladrillo_Grande (2)
   m_TagString: Untagged
@@ -20689,11 +20721,11 @@ Transform:
   m_GameObject: {fileID: 426242330}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0939999, y: -1.2226915, z: -0.07}
-  m_LocalScale: {x: 1.6, y: 1.5, z: 1}
+  m_LocalPosition: {x: -6.2577524, y: 0.17946172, z: 12.808669}
+  m_LocalScale: {x: 0.8, y: 0.3, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &426242332
 BoxCollider:
@@ -20934,7 +20966,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -21014,6 +21046,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &426242340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426242330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &426625880
@@ -21275,6 +21319,7 @@ GameObject:
   - component: {fileID: 427732151}
   - component: {fileID: 427732152}
   - component: {fileID: 427732153}
+  - component: {fileID: 427732154}
   m_Layer: 0
   m_Name: Ladrillo_Mediano (9)
   m_TagString: Untagged
@@ -21291,11 +21336,11 @@ Transform:
   m_GameObject: {fileID: 427732144}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9580002, y: 3.4673083, z: -0.07}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -6.6897526, y: 1.1174617, z: 12.808669}
+  m_LocalScale: {x: 0.5, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &427732146
 BoxCollider:
@@ -21536,7 +21581,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -21616,6 +21661,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &427732154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427732144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &428074433
@@ -22595,6 +22652,7 @@ GameObject:
   - component: {fileID: 444870355}
   - component: {fileID: 444870356}
   - component: {fileID: 444870357}
+  - component: {fileID: 444870358}
   m_Layer: 0
   m_Name: Ladrillo_Mediano (11)
   m_TagString: Untagged
@@ -22611,11 +22669,11 @@ Transform:
   m_GameObject: {fileID: 444870347}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9580002, y: 3.5223079, z: -0.07}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -6.1897526, y: 1.1284616, z: 12.808669}
+  m_LocalScale: {x: 0.5, y: 0.189978, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &444870349
 BoxCollider:
@@ -22856,7 +22914,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -22948,6 +23006,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &444870358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444870347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &445435032
@@ -25813,6 +25883,7 @@ GameObject:
   - component: {fileID: 520218992}
   - component: {fileID: 520218993}
   - component: {fileID: 520218994}
+  - component: {fileID: 520218995}
   m_Layer: 0
   m_Name: Ladrillo_Grande (3)
   m_TagString: Untagged
@@ -25829,11 +25900,11 @@ Transform:
   m_GameObject: {fileID: 520218984}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.6800003, y: 2.3123085, z: -0.07}
-  m_LocalScale: {x: 1.6, y: 1.5, z: 1}
+  m_LocalPosition: {x: -6.0507526, y: 0.88646173, z: 12.808669}
+  m_LocalScale: {x: 0.8, y: 0.3, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &520218986
 BoxCollider:
@@ -26074,7 +26145,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -26166,6 +26237,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &520218995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520218984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &523099011
@@ -27537,11 +27620,11 @@ Transform:
   m_GameObject: {fileID: 551192129}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5799999, y: 2.7173085, z: -0.07}
-  m_LocalScale: {x: 0.2, y: 0.5, z: 1}
+  m_LocalPosition: {x: -6.5007524, y: 0.96746176, z: 12.808669}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &551192131
 BoxCollider:
@@ -28548,6 +28631,7 @@ GameObject:
   - component: {fileID: 576342301}
   - component: {fileID: 576342302}
   - component: {fileID: 576342303}
+  - component: {fileID: 576342304}
   m_Layer: 0
   m_Name: Ladrillo_Re_Pequenio (8)
   m_TagString: Untagged
@@ -28564,11 +28648,11 @@ Transform:
   m_GameObject: {fileID: 576342294}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.564, y: 3.2123084, z: -0.05}
-  m_LocalScale: {x: 0.22586, y: 0.5, z: 1}
+  m_LocalPosition: {x: -6.9927526, y: 1.0664618, z: 12.81267}
+  m_LocalScale: {x: 0.11293, y: 0.1, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &576342296
 BoxCollider:
@@ -28809,7 +28893,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -28889,6 +28973,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &576342304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576342294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &579516940
@@ -29319,6 +29415,7 @@ GameObject:
   - component: {fileID: 589729140}
   - component: {fileID: 589729141}
   - component: {fileID: 589729142}
+  - component: {fileID: 589729143}
   m_Layer: 0
   m_Name: Ladrillo_Re_Pequenio
   m_TagString: Untagged
@@ -29335,11 +29432,11 @@ Transform:
   m_GameObject: {fileID: 589729133}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9893999, y: -0.7590002, z: -0.07}
-  m_LocalScale: {x: 0.2, y: 0.5, z: 1}
+  m_LocalPosition: {x: -6.7054524, y: 0.2722, z: 12.808669}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &589729135
 BoxCollider:
@@ -29580,7 +29677,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -29660,6 +29757,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &589729143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589729133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &590078979
@@ -31291,6 +31400,7 @@ GameObject:
   - component: {fileID: 620874603}
   - component: {fileID: 620874604}
   - component: {fileID: 620874605}
+  - component: {fileID: 620874606}
   m_Layer: 0
   m_Name: Ladrillo_Re_Pequenio (2)
   m_TagString: Untagged
@@ -31307,11 +31417,11 @@ Transform:
   m_GameObject: {fileID: 620874596}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.59579945, y: -0.23269176, z: -0.07}
-  m_LocalScale: {x: 0.2, y: 0.5, z: 1}
+  m_LocalPosition: {x: -6.008652, y: 0.37746167, z: 12.808669}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &620874598
 BoxCollider:
@@ -31552,7 +31662,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -31632,6 +31742,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &620874606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620874596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &624353100
@@ -37262,6 +37384,7 @@ GameObject:
   - component: {fileID: 762935479}
   - component: {fileID: 762935480}
   - component: {fileID: 762935481}
+  - component: {fileID: 762935482}
   m_Layer: 0
   m_Name: Ladrillo_Pequenio (3)
   m_TagString: Untagged
@@ -37278,11 +37401,11 @@ Transform:
   m_GameObject: {fileID: 762935472}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.198, y: 0.047308207, z: -0.07}
-  m_LocalScale: {x: 0.6, y: 1, z: 1}
+  m_LocalPosition: {x: -6.3097525, y: 0.43346167, z: 12.808669}
+  m_LocalScale: {x: 0.3, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &762935474
 BoxCollider:
@@ -37523,7 +37646,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -37603,6 +37726,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &762935482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762935472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &765529777
@@ -39645,6 +39780,7 @@ GameObject:
   - component: {fileID: 798939866}
   - component: {fileID: 798939867}
   - component: {fileID: 798939868}
+  - component: {fileID: 798939869}
   m_Layer: 0
   m_Name: Ladrillo_Re_Pequenio (5)
   m_TagString: Untagged
@@ -39661,11 +39797,11 @@ Transform:
   m_GameObject: {fileID: 798939859}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.9759998, y: 2.2153082, z: -0.07}
-  m_LocalScale: {x: 0.2, y: 0.5, z: 1}
+  m_LocalPosition: {x: -7.1987524, y: 0.8670617, z: 12.808669}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &798939861
 BoxCollider:
@@ -39906,7 +40042,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -39986,6 +40122,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &798939869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798939859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &809507384
@@ -43019,6 +43167,7 @@ GameObject:
   - component: {fileID: 864035181}
   - component: {fileID: 864035182}
   - component: {fileID: 864035183}
+  - component: {fileID: 864035184}
   m_Layer: 0
   m_Name: Ladrillo_Pequenio (9)
   m_TagString: Untagged
@@ -43035,11 +43184,11 @@ Transform:
   m_GameObject: {fileID: 864035174}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.16399956, y: 3.4923081, z: -0.07}
-  m_LocalScale: {x: 0.5817412, y: 1, z: 1}
+  m_LocalPosition: {x: -5.7927523, y: 1.129, z: 12.808669}
+  m_LocalScale: {x: 0.2908706, y: 0.18947001, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &864035176
 BoxCollider:
@@ -43280,7 +43429,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -43360,6 +43509,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &864035184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864035174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &874477285
@@ -43927,6 +44088,7 @@ GameObject:
   - component: {fileID: 888303471}
   - component: {fileID: 888303472}
   - component: {fileID: 888303473}
+  - component: {fileID: 888303474}
   m_Layer: 0
   m_Name: Ladrillo fila 0
   m_TagString: Untagged
@@ -43943,11 +44105,11 @@ Transform:
   m_GameObject: {fileID: 888303464}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.903, y: 6.21, z: -0.07}
-  m_LocalScale: {x: 0.60354877, y: 0.5, z: 1}
+  m_LocalPosition: {x: -6.6622524, y: 1.666, z: 12.808669}
+  m_LocalScale: {x: 0.30177438, y: 0.1, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &888303466
 MonoBehaviour:
@@ -44117,7 +44279,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -44268,6 +44430,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &888303474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888303464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &892421580
@@ -47022,6 +47196,7 @@ GameObject:
   - component: {fileID: 956219963}
   - component: {fileID: 956219964}
   - component: {fileID: 956219965}
+  - component: {fileID: 956219966}
   m_Layer: 0
   m_Name: Ladrillo_Muy_Pequenio (8)
   m_TagString: Untagged
@@ -47038,11 +47213,11 @@ Transform:
   m_GameObject: {fileID: 956219956}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.122, y: -0.79769194, z: -0.07}
-  m_LocalScale: {x: 0.3422236, y: 0.5852748, z: 1}
+  m_LocalPosition: {x: -5.7717524, y: 0.26446164, z: 12.808669}
+  m_LocalScale: {x: 0.1711118, y: 0.11705496, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &956219958
 BoxCollider:
@@ -47283,7 +47458,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -47363,6 +47538,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &956219966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956219956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &959758901
@@ -49269,6 +49456,7 @@ GameObject:
   - component: {fileID: 1008913670}
   - component: {fileID: 1008913671}
   - component: {fileID: 1008913672}
+  - component: {fileID: 1008913673}
   m_Layer: 0
   m_Name: Ladrillo_Grande (4)
   m_TagString: Untagged
@@ -49285,11 +49473,11 @@ Transform:
   m_GameObject: {fileID: 1008913662}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.914, y: 4.722, z: -0.07}
-  m_LocalScale: {x: 1.3603599, y: 1.4999999, z: 1}
+  m_LocalPosition: {x: -6.1677523, y: 1.3684001, z: 12.808669}
+  m_LocalScale: {x: 0.68017995, y: 0.28544998, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1008913664
 BoxCollider:
@@ -49530,7 +49718,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -49624,6 +49812,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1008913673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008913662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1019079445
 GameObject:
   m_ObjectHideFlags: 0
@@ -49641,6 +49841,7 @@ GameObject:
   - component: {fileID: 1019079452}
   - component: {fileID: 1019079453}
   - component: {fileID: 1019079454}
+  - component: {fileID: 1019079455}
   m_Layer: 0
   m_Name: Ladrillo_Muy_Pequenio (3)
   m_TagString: Untagged
@@ -49657,11 +49858,11 @@ Transform:
   m_GameObject: {fileID: 1019079445}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.2859993, y: 0.73230803, z: -0.07}
-  m_LocalScale: {x: 0.4, y: 0.5278, z: 1}
+  m_LocalPosition: {x: -5.853752, y: 0.575, z: 12.808669}
+  m_LocalScale: {x: 0.2, y: 0.0929023, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1019079447
 BoxCollider:
@@ -49902,7 +50103,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -49982,6 +50183,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1019079455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019079445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1019898886
@@ -50823,6 +51036,7 @@ GameObject:
   - component: {fileID: 1035189389}
   - component: {fileID: 1035189390}
   - component: {fileID: 1035189391}
+  - component: {fileID: 1035189392}
   m_Layer: 0
   m_Name: Ladrillo_Mediano (11)
   m_TagString: Untagged
@@ -50839,11 +51053,11 @@ Transform:
   m_GameObject: {fileID: 1035189382}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 5.93, z: -0.07}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -5.9607525, y: 1.61, z: 12.808669}
+  m_LocalScale: {x: 0.5, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1035189384
 BoxCollider:
@@ -51084,7 +51298,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -51164,6 +51378,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1035189392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035189382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1040178814
@@ -52964,6 +53190,7 @@ GameObject:
   - component: {fileID: 1095474903}
   - component: {fileID: 1095474904}
   - component: {fileID: 1095474905}
+  - component: {fileID: 1095474906}
   m_Layer: 0
   m_Name: Ladrillo_Mediano (8)
   m_TagString: Untagged
@@ -52980,11 +53207,11 @@ Transform:
   m_GameObject: {fileID: 1095474896}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.07}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -5.7107525, y: 0.42400002, z: 12.808669}
+  m_LocalScale: {x: 0.5, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1095474898
 BoxCollider:
@@ -53225,7 +53452,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -53305,6 +53532,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1095474906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095474896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1098592323
@@ -54251,6 +54490,7 @@ GameObject:
   - component: {fileID: 1122246550}
   - component: {fileID: 1122246551}
   - component: {fileID: 1122246552}
+  - component: {fileID: 1122246553}
   m_Layer: 0
   m_Name: Ladrillo fila 1
   m_TagString: Untagged
@@ -54267,11 +54507,11 @@ Transform:
   m_GameObject: {fileID: 1122246543}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9040003, y: 5.427308, z: -0.07}
-  m_LocalScale: {x: 0.614844, y: 1, z: 1}
+  m_LocalPosition: {x: -6.6627526, y: 1.5094616, z: 12.808669}
+  m_LocalScale: {x: 0.307422, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1122246545
 BoxCollider:
@@ -54512,7 +54752,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -54592,6 +54832,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1122246553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122246543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1126113938
@@ -57151,6 +57403,7 @@ GameObject:
   - component: {fileID: 1184363554}
   - component: {fileID: 1184363555}
   - component: {fileID: 1184363556}
+  - component: {fileID: 1184363557}
   m_Layer: 0
   m_Name: Ladrillo_Muy_Pequenio (5)
   m_TagString: Untagged
@@ -57167,11 +57420,11 @@ Transform:
   m_GameObject: {fileID: 1184363547}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.002, y: 4.2, z: -0.07}
-  m_LocalScale: {x: 0.4, y: 0.5, z: 1}
+  m_LocalPosition: {x: -6.7117524, y: 1.2639999, z: 12.808669}
+  m_LocalScale: {x: 0.2, y: 0.1, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1184363549
 MonoBehaviour:
@@ -57341,7 +57594,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -57492,6 +57745,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1184363557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184363547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1185095949
@@ -62952,6 +63217,7 @@ GameObject:
   - component: {fileID: 1331649200}
   - component: {fileID: 1331649201}
   - component: {fileID: 1331649202}
+  - component: {fileID: 1331649203}
   m_Layer: 0
   m_Name: Ladrillo_Pequenio (6)
   m_TagString: Untagged
@@ -62968,11 +63234,11 @@ Transform:
   m_GameObject: {fileID: 1331649193}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.19550514, y: 0.87730825, z: -0.07}
-  m_LocalScale: {x: 0.6, y: 1, z: 1}
+  m_LocalPosition: {x: -5.613, y: 0.6166, z: 12.808669}
+  m_LocalScale: {x: 0.289449, y: 0.182994, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1331649195
 BoxCollider:
@@ -63213,7 +63479,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -63293,6 +63559,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1331649203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331649193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1334480686
@@ -66045,6 +66323,7 @@ GameObject:
   - component: {fileID: 1388441017}
   - component: {fileID: 1388441018}
   - component: {fileID: 1388441019}
+  - component: {fileID: 1388441020}
   m_Layer: 0
   m_Name: Ladrillo_Muy_Pequenio (7)
   m_TagString: Untagged
@@ -66061,11 +66340,11 @@ Transform:
   m_GameObject: {fileID: 1388441010}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.25, y: -0.769, z: -0.07}
-  m_LocalScale: {x: 0.4, y: 0.56889594, z: 1}
+  m_LocalPosition: {x: -5.5857525, y: 0.2702, z: 12.808669}
+  m_LocalScale: {x: 0.2, y: 0.11377919, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1388441012
 BoxCollider:
@@ -66306,7 +66585,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -66386,6 +66665,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1388441020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388441010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1392188797
@@ -70497,6 +70788,7 @@ GameObject:
   - component: {fileID: 1496337665}
   - component: {fileID: 1496337672}
   - component: {fileID: 1496337673}
+  - component: {fileID: 1496337674}
   m_Layer: 0
   m_Name: Ladrillo de prueba
   m_TagString: Untagged
@@ -70513,11 +70805,11 @@ Transform:
   m_GameObject: {fileID: 1496337663}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5404949, y: 0.7949999, z: 5.811653}
-  m_LocalScale: {x: 1.3603599, y: 1.4999999, z: 1}
+  m_LocalPosition: {x: -5.981, y: 0.583, z: 13.985}
+  m_LocalScale: {x: 0.68017995, y: 0.29999998, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1496337665
 MonoBehaviour:
@@ -70850,6 +71142,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1496337674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496337663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1498845731
@@ -76447,6 +76751,7 @@ GameObject:
   - component: {fileID: 1634225366}
   - component: {fileID: 1634225367}
   - component: {fileID: 1634225368}
+  - component: {fileID: 1634225369}
   m_Layer: 0
   m_Name: Ladrillo_Re_Pequenio (11)
   m_TagString: Untagged
@@ -76463,11 +76768,11 @@ Transform:
   m_GameObject: {fileID: 1634225359}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.096, y: 4.67, z: -0.07}
-  m_LocalScale: {x: 0.22615568, y: 0.5, z: 1}
+  m_LocalPosition: {x: -6.7587523, y: 1.358, z: 12.808669}
+  m_LocalScale: {x: 0.11307784, y: 0.1, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1634225361
 MonoBehaviour:
@@ -76637,7 +76942,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -76788,6 +77093,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1634225369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634225359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1636999294
@@ -79926,6 +80243,7 @@ GameObject:
   - component: {fileID: 1736125122}
   - component: {fileID: 1736125123}
   - component: {fileID: 1736125124}
+  - component: {fileID: 1736125125}
   m_Layer: 0
   m_Name: Ladrillo_Re_Pequenio (12)
   m_TagString: Untagged
@@ -79942,11 +80260,11 @@ Transform:
   m_GameObject: {fileID: 1736125115}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.335, y: 5.237, z: -0.07}
-  m_LocalScale: {x: 0.24808757, y: 0.5632, z: 1}
+  m_LocalPosition: {x: -6.8782525, y: 1.4714, z: 12.808669}
+  m_LocalScale: {x: 0.124043785, y: 0.11264, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1736125117
 MonoBehaviour:
@@ -80116,7 +80434,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -80267,6 +80585,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1736125125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736125115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1738169262
@@ -81624,6 +81954,7 @@ GameObject:
   - component: {fileID: 1781251982}
   - component: {fileID: 1781251983}
   - component: {fileID: 1781251984}
+  - component: {fileID: 1781251985}
   m_Layer: 0
   m_Name: ladrillo fila 0 (1)
   m_TagString: Untagged
@@ -81640,11 +81971,11 @@ Transform:
   m_GameObject: {fileID: 1781251975}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.297, y: 5.94, z: -0.07}
-  m_LocalScale: {x: 0.59146243, y: 1, z: 1}
+  m_LocalPosition: {x: -6.3592525, y: 1.6120001, z: 12.808669}
+  m_LocalScale: {x: 0.29573122, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1781251977
 BoxCollider:
@@ -81885,7 +82216,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -81965,6 +82296,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1781251985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781251975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1782720910
@@ -83185,6 +83528,7 @@ GameObject:
   - component: {fileID: 1810334020}
   - component: {fileID: 1810334021}
   - component: {fileID: 1810334022}
+  - component: {fileID: 1810334023}
   m_Layer: 0
   m_Name: Ladrillo_Mediano (4)
   m_TagString: Untagged
@@ -83201,11 +83545,11 @@ Transform:
   m_GameObject: {fileID: 1810334013}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.97999954, y: 1.0623085, z: -0.07}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -6.2007523, y: 0.63646173, z: 12.808669}
+  m_LocalScale: {x: 0.5, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1810334015
 BoxCollider:
@@ -83446,7 +83790,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -83526,6 +83870,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1810334023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810334013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1811037019
@@ -84052,7 +84408,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1827666111}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
@@ -84080,6 +84436,7 @@ GameObject:
   - component: {fileID: 1828230418}
   - component: {fileID: 1828230419}
   - component: {fileID: 1828230420}
+  - component: {fileID: 1828230421}
   m_Layer: 0
   m_Name: Ladrillo_Pequenio (10)
   m_TagString: Untagged
@@ -84096,11 +84453,11 @@ Transform:
   m_GameObject: {fileID: 1828230411}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.328, y: 4.46, z: -0.07}
-  m_LocalScale: {x: 0.25328055, y: 1, z: 1}
+  m_LocalPosition: {x: -6.8747525, y: 1.316, z: 12.808669}
+  m_LocalScale: {x: 0.12664028, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1828230413
 MonoBehaviour:
@@ -84270,7 +84627,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -84421,6 +84778,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1828230421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828230411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1829306431
@@ -84780,7 +85149,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 105409884}
   - {fileID: 1872076394}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -84801,6 +85169,7 @@ GameObject:
   - component: {fileID: 1838077143}
   - component: {fileID: 1838077144}
   - component: {fileID: 1838077145}
+  - component: {fileID: 1838077146}
   m_Layer: 0
   m_Name: Ladrillo_Muy_Pequenio
   m_TagString: Untagged
@@ -84817,11 +85186,11 @@ Transform:
   m_GameObject: {fileID: 1838077136}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.6924953, y: -0.7590002, z: -0.07}
-  m_LocalScale: {x: 0.4, y: 0.5, z: 1}
+  m_LocalPosition: {x: -7.057, y: 0.2722, z: 12.808669}
+  m_LocalScale: {x: 0.2, y: 0.1, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1838077138
 BoxCollider:
@@ -85062,7 +85431,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -85142,6 +85511,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1838077146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838077136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1838853889
@@ -87981,6 +88362,7 @@ GameObject:
   - component: {fileID: 1894975748}
   - component: {fileID: 1894975749}
   - component: {fileID: 1894975750}
+  - component: {fileID: 1894975751}
   m_Layer: 0
   m_Name: Ladrillo_Re_Pequenio (1)
   m_TagString: Untagged
@@ -87997,11 +88379,11 @@ Transform:
   m_GameObject: {fileID: 1894975741}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.80200005, y: -0.23269176, z: -0.07}
-  m_LocalScale: {x: 0.2, y: 0.5, z: 1}
+  m_LocalPosition: {x: -6.1117525, y: 0.37746167, z: 12.808669}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1894975743
 BoxCollider:
@@ -88242,7 +88624,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -88322,6 +88704,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1894975751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894975741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1904318412
@@ -93774,6 +94168,7 @@ GameObject:
   - component: {fileID: 2050458527}
   - component: {fileID: 2050458528}
   - component: {fileID: 2050458529}
+  - component: {fileID: 2050458530}
   m_Layer: 0
   m_Name: Ladrillo_Muy_Pequenio (1)
   m_TagString: Untagged
@@ -93790,11 +94185,11 @@ Transform:
   m_GameObject: {fileID: 2050458520}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.2939997, y: -0.7590002, z: -0.07}
-  m_LocalScale: {x: 0.4, y: 0.5, z: 1}
+  m_LocalPosition: {x: -6.8577523, y: 0.2722, z: 12.808669}
+  m_LocalScale: {x: 0.2, y: 0.1, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2050458522
 BoxCollider:
@@ -94035,7 +94430,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -94115,6 +94510,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2050458530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050458520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2052888401
@@ -94682,6 +95089,7 @@ GameObject:
   - component: {fileID: 2060743152}
   - component: {fileID: 2060743153}
   - component: {fileID: 2060743154}
+  - component: {fileID: 2060743155}
   m_Layer: 0
   m_Name: Ladrillo_Grande (1)
   m_TagString: Untagged
@@ -94698,11 +95106,11 @@ Transform:
   m_GameObject: {fileID: 2060743145}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.2699995, y: 1.2323081, z: -0.07}
-  m_LocalScale: {x: 1.5999999, y: 1.4999999, z: 1}
+  m_LocalPosition: {x: -6.8457522, y: 0.67046165, z: 12.808669}
+  m_LocalScale: {x: 0.77893597, y: 0.29999998, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2060743147
 BoxCollider:
@@ -94943,7 +95351,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -95023,6 +95431,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2060743155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060743145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2064885776
@@ -97097,6 +97517,7 @@ GameObject:
   - component: {fileID: 2102065407}
   - component: {fileID: 2102065408}
   - component: {fileID: 2102065409}
+  - component: {fileID: 2102065410}
   m_Layer: 0
   m_Name: Ladrillo_Muy_Pequenio (4)
   m_TagString: Untagged
@@ -97113,11 +97534,11 @@ Transform:
   m_GameObject: {fileID: 2102065400}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.2859993, y: 1.2723082, z: -0.07}
-  m_LocalScale: {x: 0.4, y: 0.57069767, z: 1}
+  m_LocalPosition: {x: -5.853752, y: 0.6784617, z: 12.808669}
+  m_LocalScale: {x: 0.2, y: 0.114139535, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2102065402
 BoxCollider:
@@ -97359,7 +97780,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -97439,6 +97860,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2102065410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102065400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2104508270
@@ -98417,6 +98850,7 @@ GameObject:
   - component: {fileID: 2116610141}
   - component: {fileID: 2116610142}
   - component: {fileID: 2116610143}
+  - component: {fileID: 2116610144}
   m_Layer: 0
   m_Name: Ladrillo_Re_Pequenio (9)
   m_TagString: Untagged
@@ -98433,11 +98867,11 @@ Transform:
   m_GameObject: {fileID: 2116610134}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.701, y: 4.22, z: -0.07}
-  m_LocalScale: {x: 0.2, y: 0.5, z: 1}
+  m_LocalPosition: {x: -6.5612526, y: 1.268, z: 12.808669}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2116610136
 MonoBehaviour:
@@ -98607,7 +99041,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -98758,6 +99192,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2116610144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116610134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2123178804
@@ -99736,6 +100182,7 @@ GameObject:
   - component: {fileID: 2147431408}
   - component: {fileID: 2147431409}
   - component: {fileID: 2147431410}
+  - component: {fileID: 2147431411}
   m_Layer: 0
   m_Name: Ladrillo_Mediano (5)
   m_TagString: Untagged
@@ -99752,11 +100199,11 @@ Transform:
   m_GameObject: {fileID: 2147431401}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.1799994, y: 2.4873085, z: -0.07}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -6.800752, y: 0.9214617, z: 12.808669}
+  m_LocalScale: {x: 0.5, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 105409884}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2147431403
 BoxCollider:
@@ -99997,7 +100444,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 0.1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -100079,6 +100526,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f6aae49428f92043bf956e0bb1bc407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2147431411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147431401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c27f7d50c29c74399f8822e79b575c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -100098,3 +100557,45 @@ SceneRoots:
   - {fileID: 677962410}
   - {fileID: 1185095949}
   - {fileID: 1193657363}
+  - {fileID: 1035189383}
+  - {fileID: 1781251976}
+  - {fileID: 426242331}
+  - {fileID: 21642374}
+  - {fileID: 1496337664}
+  - {fileID: 520218985}
+  - {fileID: 1810334014}
+  - {fileID: 2147431402}
+  - {fileID: 55816405}
+  - {fileID: 1095474897}
+  - {fileID: 444870348}
+  - {fileID: 427732145}
+  - {fileID: 762935473}
+  - {fileID: 864035175}
+  - {fileID: 1828230412}
+  - {fileID: 2060743146}
+  - {fileID: 1838077137}
+  - {fileID: 97685624}
+  - {fileID: 1019079446}
+  - {fileID: 1388441011}
+  - {fileID: 956219957}
+  - {fileID: 2102065401}
+  - {fileID: 2050458521}
+  - {fileID: 1184363548}
+  - {fileID: 219055063}
+  - {fileID: 888303465}
+  - {fileID: 589729134}
+  - {fileID: 1894975742}
+  - {fileID: 51527435}
+  - {fileID: 82804400}
+  - {fileID: 798939860}
+  - {fileID: 576342295}
+  - {fileID: 2116610135}
+  - {fileID: 1634225360}
+  - {fileID: 1736125116}
+  - {fileID: 53089668}
+  - {fileID: 620874597}
+  - {fileID: 304596966}
+  - {fileID: 1008913663}
+  - {fileID: 1331649194}
+  - {fileID: 1122246544}
+  - {fileID: 551192130}
