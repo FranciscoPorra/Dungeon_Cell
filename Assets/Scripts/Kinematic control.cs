@@ -38,9 +38,7 @@ public class BrickStructuralSupport : MonoBehaviour
         // Lanzamos el rayo hacia arriba
         if (Physics.Raycast(rayOrigin, Vector3.up, out hit, checkDistance, supportLayer))
         {
-            // DEBUG 1: Vemos qué objeto fue golpeado exactamente
-            Debug.Log($"[{gameObject.name}] Raycast chocó contra: {hit.collider.name}", hit.collider.gameObject);
-
+            
             Rigidbody upperRb = hit.collider.GetComponent<Rigidbody>();
 
             if (upperRb == null)
@@ -52,8 +50,7 @@ public class BrickStructuralSupport : MonoBehaviour
         }
         else
         {
-            // DEBUG 2: Si el rayo no choca con nada (espacio vacío)
-            Debug.Log($"[{gameObject.name}] Se libera porque el raycast NO encontró nada arriba.", gameObject);
+            
             ReleaseBrick();
         }
     }
