@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Inputs ;
 
 public class Controlador_Fisica_Bloque : MonoBehaviour
 {
@@ -89,6 +90,18 @@ public class Controlador_Fisica_Bloque : MonoBehaviour
     private void Agarro_Bloque(SelectEnterEventArgs args)
     {
         bloque_esta_siendo_agarrado = true ;
+        float intensidad = Mathf.Clamp(peso_del_objeto * 0.02f, 0.15f, 0.8f);
+        float duracion = 1f; // segundos
+
+        if (args.interactorObject is XRBaseControllerInteractor controllerInteractor)
+        {
+            controllerInteractor.SendHapticImpulse(intensidad, duracion);
+            Debug.Log("Pulso enviado -> intensidad: " + intensidad);
+        }
+        else
+        {
+            Debug.LogWarning("El interactor NO es XRBaseControllerInteractor");
+        }
     }
 
     private void Suelto_Bloque(SelectExitEventArgs args)
