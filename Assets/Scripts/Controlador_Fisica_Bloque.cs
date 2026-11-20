@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
-using UnityEngine.XR.Interaction.Toolkit.Inputs;
 
 public class Controlador_Fisica_Bloque : MonoBehaviour
 {
@@ -14,20 +13,16 @@ public class Controlador_Fisica_Bloque : MonoBehaviour
     private float peso_del_objeto;
     private float velocidad_del_objeto;
 
-    // Esto podria ser mas extensible, con distintos tipos de materiales
     private static float densidad_del_material = 1000.0f;
     private static float velocidad_base = 5.0f;
 
-    // Inicialmente el bloque no esta siendo agarrado
     private bool bloque_esta_siendo_agarrado = false;
-
-    // Para que no se deforme el bloque al soltarlo
     private Vector3 escala_inicial;
 
     [Header("Fatiga y Temblor Progresivo")]
     [SerializeField] private float tiempoBaseResistencia = 240f;
-    [SerializeField] private float tiempoMinimoSostener = 4.0f;
-    [SerializeField] private float tiempoMaximoSostener = 16.0f;
+    [SerializeField] private float tiempoMinimoSostener = 3.0f;
+    [SerializeField] private float tiempoMaximoSostener = 7.0f;
     [SerializeField, Range(0f, 0.9f)] private float inicioTemblorProgreso = 0.5f;
     [SerializeField] private float temblorMaximoMetros = 0.005f;
 
@@ -35,23 +30,27 @@ public class Controlador_Fisica_Bloque : MonoBehaviour
     private float duracionLimiteActual = 5f;
     private IXRSelectInteractor interactorActual;
 
+    [Header("Vibración Progresiva en Mandos")]
+    [SerializeField] private float vibracionMinima = 0.05f;
+    [SerializeField] private float vibracionMaxima = 0.85f;
+    [SerializeField] private float intervaloPulsoHaptico = 0.05f;
+    [SerializeField] private bool vibrarSoloDesdeInicioTemblor = true;
+    [SerializeField] private bool mostrarLogProgresion = true;
+
+    private float temporizadorPulsoHaptico = 0f;
+
     void Start()
     {
         box_collider = GetComponent<BoxCollider>();
         rigid_body = GetComponent<Rigidbody>();
         xr_grab_interactable = GetComponent<XRGrabInteractable>();
 
-        // Condicion inicial
         velocidad_del_objeto = velocidad_base;
-
         Calcular_Velocidad_del_Objeto();
 
-        // Funciones de evento, Entered cuando tomo el bloque y Exited cuando lo suelto
         xr_grab_interactable.selectEntered.AddListener(Agarro_Bloque);
         xr_grab_interactable.selectExited.AddListener(Suelto_Bloque);
 
-        // Permite que el motor de RV calcule la distancia elastica entre tu mano y el bloque, haciendo que los
-        // objetos muy pesados se queden fisicamente rezagados o se sientan lentos al arrastrarlos bruscamente.
         xr_grab_interactable.movementType = XRBaseInteractable.MovementType.VelocityTracking;
         xr_grab_interactable.trackRotation = false;
 
@@ -61,23 +60,18 @@ public class Controlador_Fisica_Bloque : MonoBehaviour
     public void Calcular_Velocidad_del_Objeto()
     {
         peso_del_objeto = Calcular_Peso_del_Objeto();
-
         velocidad_del_objeto = Mathf.Max(0.125f, (velocidad_base / peso_del_objeto));
         Debug.Log("Nombre: " + gameObject.name + " -------- Masa: " + peso_del_objeto + " -------- Velocidad: " + velocidad_del_objeto);
-        // Piso de seguridad con el 0.5f, si el peso es muy grande, me puede hacer pelotas las fisicas
-
         rigid_body.mass = peso_del_objeto;
     }
 
     private float Calcular_Peso_del_Objeto()
     {
         Vector3 Tamanio = box_collider.size;
-        Vector3 Escala = transform.localScale; // Obtengo tamanio real del gameobject --> PROBLEMAAAS
+        Vector3 Escala = transform.localScale;
         float Volumen = (Escala.x) * (Escala.y) * (Escala.z);
-
         float Peso = (Volumen * densidad_del_material);
-
-        return (Peso);
+        return Peso;
     }
 
     private void Update()
@@ -85,21 +79,22 @@ public class Controlador_Fisica_Bloque : MonoBehaviour
         if (!bloque_esta_siendo_agarrado) return;
 
         tiempoSosteniendo += Time.deltaTime;
-        float progresoTotal = Mathf.Clamp01(tiempoSosteniendo / duracionLimiteActual);
+        float progresoTotal = Mathf.Clamp01(tiempoSosteniendo / Mathf.Max(duracionLimiteActual, 0.01f));
 
-        // Barra amarilla decreciente (1f llena -> 0f agotada)
+        // Barra decreciente (1f llena -> 0f agotada)
         if (Barra_Fatiga_UI.Instancia != null)
         {
             Barra_Fatiga_UI.Instancia.ActualizarProgreso(1f - progresoTotal);
         }
 
-        float intensidadActual = 0f;
-        if (progresoTotal > inicioTemblorProgreso)
-        {
-            float divisor = Mathf.Max(1f - inicioTemblorProgreso, 0.001f);
-            float progresoPostInicio = Mathf.Clamp01((progresoTotal - inicioTemblorProgreso) / divisor);
+        float divisor = Mathf.Max(1f - inicioTemblorProgreso, 0.001f);
+        float progresoPostInicio = progresoTotal > inicioTemblorProgreso
+            ? Mathf.Clamp01((progresoTotal - inicioTemblorProgreso) / divisor)
+            : 0f;
 
-            // Potencia 4: tarda bastante en levantar y crece de forma gradual
+        float intensidadActual = 0f;
+        if (progresoPostInicio > 0f)
+        {
             float fatiga = Mathf.Pow(progresoPostInicio, 4f);
             intensidadActual = fatiga * temblorMaximoMetros;
         }
@@ -109,9 +104,60 @@ public class Controlador_Fisica_Bloque : MonoBehaviour
             Temblor_Camara.Instancia.EstablecerTemblorContinuo(intensidadActual);
         }
 
+        ActualizarVibracionHaptica(progresoTotal, progresoPostInicio);
+
         if (tiempoSosteniendo >= duracionLimiteActual)
         {
             ForzarSuelta();
+        }
+    }
+
+    private void ActualizarVibracionHaptica(float progresoTotal, float progresoPostInicio)
+    {
+        bool debeVibrar = vibrarSoloDesdeInicioTemblor
+            ? (progresoTotal > inicioTemblorProgreso)
+            : (progresoTotal > 0f);
+
+        if (!debeVibrar)
+        {
+            temporizadorPulsoHaptico = 0f;
+            return;
+        }
+
+        float baseCurva = vibrarSoloDesdeInicioTemblor ? progresoPostInicio : progresoTotal;
+        float factorVibracion = Mathf.Pow(Mathf.Clamp01(baseCurva), 4f);
+
+        temporizadorPulsoHaptico += Time.deltaTime;
+        if (temporizadorPulsoHaptico >= intervaloPulsoHaptico)
+        {
+            temporizadorPulsoHaptico = 0f;
+            float amplitudActual = Mathf.Lerp(vibracionMinima, vibracionMaxima, factorVibracion);
+            EnviarPulsoHaptico(amplitudActual, intervaloPulsoHaptico * 1.2f);
+
+            if (mostrarLogProgresion)
+            {
+                string medidor = new string('|', Mathf.Clamp(Mathf.RoundToInt(factorVibracion * 20f), 0, 20));
+                Debug.Log($"[Haptics] prog={progresoTotal:F2} | pPost={progresoPostInicio:F2} | factor={factorVibracion:F3} | amp={amplitudActual:F3} | [{medidor,-20}]");
+            }
+        }
+    }
+
+    private void EnviarPulsoHaptico(float amplitud, float duracion)
+    {
+        if (interactorActual is XRBaseControllerInteractor controllerInteractor)
+        {
+            controllerInteractor.SendHapticImpulse(Mathf.Clamp01(amplitud), duracion);
+        }
+    }
+
+    private void DetenerVibracionHaptica()
+    {
+        temporizadorPulsoHaptico = 0f;
+        EnviarPulsoHaptico(0f, 0.01f);
+
+        if (mostrarLogProgresion)
+        {
+            Debug.Log("[Haptics] Detenida (bloque soltado)");
         }
     }
 
@@ -121,11 +167,6 @@ public class Controlador_Fisica_Bloque : MonoBehaviour
         {
             if (rigid_body.velocity.magnitude > velocidad_del_objeto)
             {
-                /* Limitador de velocidad, cuando yo agarro algo
-                Unity calcula cuanto movi yo mi mano mientras agarraba el objeto
-                calcula esa distancia (un vector) y mueve el objeto tan rapido como yo lo movi
-                pero si estableciese que la velocidad a la que se tiene que mover el objeto
-                es siempre la misma, confundo a las fisicas, se deforma el objeto */
                 rigid_body.velocity = rigid_body.velocity.normalized * velocidad_del_objeto;
             }
         }
@@ -136,6 +177,7 @@ public class Controlador_Fisica_Bloque : MonoBehaviour
         bloque_esta_siendo_agarrado = true;
         interactorActual = args.interactorObject;
         tiempoSosteniendo = 0f;
+        temporizadorPulsoHaptico = 0f;
 
         duracionLimiteActual = Mathf.Clamp(
             tiempoBaseResistencia / Mathf.Max(peso_del_objeto, 0.1f),
@@ -152,7 +194,7 @@ public class Controlador_Fisica_Bloque : MonoBehaviour
         }
 
         float intensidad = Mathf.Clamp(peso_del_objeto * 0.02f, 0.15f, 0.8f);
-        float duracion = 1f; // segundos
+        float duracion = 0.1f;
 
         if (args.interactorObject is XRBaseControllerInteractor controllerInteractor)
         {
@@ -179,16 +221,14 @@ public class Controlador_Fisica_Bloque : MonoBehaviour
     {
         LimpiarEstadoAgarre();
         transform.localScale = escala_inicial;
-        /* if (rigid_body.velocity.magnitude > velocidad_del_objeto)
-            {
-                rigid_body.velocity = rigid_body.velocity.normalized * velocidad_del_objeto;
-            } */
-        // En lugar de un cero absoluto que choca contra el sistema de RV,
-        // multiplicamos la velocidad actual por un factor de frenado suave (ej. 10%)
     }
 
     private void LimpiarEstadoAgarre()
     {
+        if (!bloque_esta_siendo_agarrado && interactorActual == null) return;
+
+        DetenerVibracionHaptica();
+
         bloque_esta_siendo_agarrado = false;
         interactorActual = null;
         tiempoSosteniendo = 0f;
