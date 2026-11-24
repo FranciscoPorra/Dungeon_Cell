@@ -8,24 +8,25 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class GuardInspectionController : MonoBehaviour
 {
     [Header("Referencias en la Puerta")]
-    public GameObject guardVisual;          // Guardia que aparece en la rendija
-    public VisionConeFilter visionCone;    // Componente del objeto con SphereCollider
-    public MeshRenderer coneRayRenderer;    // MeshRenderer del cono de visión (rayo de luz)
-    public GameObject visionConeVisual;     // Opcional: otro objeto visual extra
-    public Light coneSpotLight;             // Opcional: luz puntual o de foco
-    public AudioSource audioSource;         // Fuente de audio (idealmente 3D en la puerta)
+    public GameObject guardVisual;
+    public VisionConeFilter visionCone;
+    public MeshRenderer coneRayRenderer;
+    public GameObject visionConeVisual;
+    public Light coneSpotLight;
+    public AudioSource audioSource;
+
+    [Header("Inicio Automático")]
+    [Tooltip("Déjalo desactivado si inicias la partida desde un botón 'Iniciar' en la misma escena")]
+    public bool startImmediatelyOnStart = false;
 
     [Header("Tiempos de Ronda (segundos)")]
     public float minWaitTime = 8f;
     public float maxWaitTime = 16f;
-    public float warningLeadTime = 1.5f;  // Tiempo de aviso antes de mostrar guardia y cono
+    public float warningLeadTime = 1.5f;
     public float inspectionDuration = 3f;
 
     [Header("Sonidos de Inmersión (MP3 / AudioClips)")]
-    [Tooltip("Sonidos aleatorios antes de que aparezca el guardia (pasos, cerrojo, etc.)")]
     public List<AudioClip> approachSounds = new List<AudioClip>();
-
-    [Tooltip("Sonidos aleatorios cuando el guardia termina y se va")]
     public List<AudioClip> leaveSounds = new List<AudioClip>();
 
     [Header("Ladrillos a Vigilar (cargados en el Inspector)")]
@@ -36,6 +37,7 @@ public class GuardInspectionController : MonoBehaviour
 
     private bool isInspecting = false;
     private bool gameEnded = false;
+    private Coroutine inspectionRoutine;
 
     void Awake()
     {
@@ -49,7 +51,34 @@ public class GuardInspectionController : MonoBehaviour
     void Start()
     {
         SetInspectionState(false);
-        StartCoroutine(InspectionLoop());
+
+        if (startImmediatelyOnStart)
+        {
+            StartGameplay();
+        }
+    }
+
+    public void StartGameplay()
+    {
+        gameEnded = false;
+        SetInspectionState(false);
+
+        if (inspectionRoutine != null)
+            StopCoroutine(inspectionRoutine);
+
+        inspectionRoutine = StartCoroutine(InspectionLoop());
+    }
+
+    public void StopGameplay()
+    {
+        gameEnded = true;
+        SetInspectionState(false);
+
+        if (inspectionRoutine != null)
+        {
+            StopCoroutine(inspectionRoutine);
+            inspectionRoutine = null;
+        }
     }
 
     private IEnumerator InspectionLoop()
@@ -61,7 +90,6 @@ public class GuardInspectionController : MonoBehaviour
 
             if (gameEnded) yield break;
 
-            // 1. Aviso previo: reproduce un sonido aleatorio y da margen al jugador
             PlayRandomClip(approachSounds);
 
             if (warningLeadTime > 0f)
@@ -76,7 +104,6 @@ public class GuardInspectionController : MonoBehaviour
 
             if (gameEnded) yield break;
 
-            // 2. Aparece el guardia y se activa el cono de visión
             SetInspectionState(true);
 
             float elapsed = 0f;
@@ -92,7 +119,6 @@ public class GuardInspectionController : MonoBehaviour
                 yield return null;
             }
 
-            // 3. El guardia se va: oculta guardia/cono y reproduce sonido de retirada
             SetInspectionState(false);
             PlayRandomClip(leaveSounds);
         }
@@ -144,11 +170,9 @@ public class GuardInspectionController : MonoBehaviour
         {
             if (brick == null || !brick.gameObject.activeInHierarchy) continue;
 
-            // 1. Está siendo agarrado actualmente
             if (brick.isSelected)
                 return true;
 
-            // 2. Está dentro del cono de visión
             if (visionCone != null)
             {
                 Collider brickCol = brick.GetComponent<Collider>();
@@ -166,6 +190,7 @@ public class GuardInspectionController : MonoBehaviour
     {
         if (gameEnded) return;
         gameEnded = true;
+        SetInspectionState(false);
 
         Debug.Log("¡El guardia vio un ladrillo! Fin de la partida.");
         onPlayerCaught?.Invoke();
